@@ -1,43 +1,41 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Globalization;
 
-namespace Curso.Class.Class11Constructor {
-    internal class Produto {
-        public string Nome;
-        public double Preco;
-        public int Quantidade;
+namespace Curso.Class.Class11Constructor;
 
-        public Produto(string nome, double preco, int quantidade) { 
-            Nome = nome;
-            Preco = preco;
-            Quantidade = quantidade;
-        
-        }
+internal class Produto {
+    public string Nome;
+    public double Preco;
+    public int Quantidade;
 
-        public double ValorTotalEmEstoque() {
-            return Preco * Quantidade;
-        }
+    public Produto() {
+        Quantidade = 10;
+    }
 
-        public void AdicionarProduto(int qtd) {
-            Quantidade += qtd;
-        }
+    //sobrecarga do construtor e referencia ao construtor vazio
+    public Produto(string nome, double preco) : this() {
+        Nome = nome;
+        Preco = preco;
+    }
 
-        public void RemoverProduto(int qtd) {
-            Quantidade -= qtd;
-        }
+    public double ValorTotalEmEstoque() {
+        return Preco * Quantidade;
+    }
 
-        public override string ToString() {
-            return Nome
-                + ", R$ "
-                + Preco.ToString("F2", CultureInfo.InvariantCulture)
-                + ", "
-                + Quantidade
-                + " unidades, Total: R$ "
-                + ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);
-        }
+    public void AdicionarProduto(int qtd) {
+        Quantidade += qtd;
+    }
+
+    public void RemoverProduto(int qtd) {
+        Quantidade -= qtd;
+    }
+
+    public override string ToString() {
+        return Nome
+            + ", R$ "
+            + Preco.ToString("F2", CultureInfo.InvariantCulture)
+            + ", "
+            + Quantidade
+            + " unidades, Total: R$ "
+            + ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);
     }
 }

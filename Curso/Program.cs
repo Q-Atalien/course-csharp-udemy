@@ -10,6 +10,10 @@ using Curso.Exercicios.Exe6;
 using Curso.Exercicios.Exe7;
 using Curso.Exercicios.Exe8;
 using Curso.Exercicios.Exe9;
+using Curso.Exercicios.Exe11;
+using Curso.Class.Class12Struct;
+using Curso.Class.Class15;
+using Curso.Exercicios.Exe12;
 
 //Class1.Executar();
 //Class2.Executar();
@@ -22,8 +26,6 @@ using Curso.Exercicios.Exe9;
 //Class6.Executar();
 //Exe4.Executar();
 
-//-----
-
 //Class7.Executar();
 //Class8.Executar();
 //Exe7.Executar();
@@ -32,7 +34,13 @@ using Curso.Exercicios.Exe9;
 //Class9.Executar();
 //Class10.Executar();
 //Exe10.Executar();
-Class11.Executar();
-
-
+//Class11.Executar();
+//Class11encapsula.Executar();
+//Exe11.Executar();
+//Class12.Executar();
+//Class13.Executar();
+//Class14.Executar();
+//Class15.Executar();
+//Exe12.Executar();
+Class16.Executar();
 

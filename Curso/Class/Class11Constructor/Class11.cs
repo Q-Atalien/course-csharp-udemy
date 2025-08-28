@@ -12,12 +12,14 @@ namespace Curso.Class.Class11Constructor {
             Console.WriteLine("Entre com os dados do produto:");
             Console.Write("Nome: ");
             string nome = Console.ReadLine();
+
             Console.Write("Preço: ");
             double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
             Console.Write("Quantidade: ");
             int quantidade = int.Parse(Console.ReadLine());
 
-            Produto p = new Produto(nome, preco, quantidade);
+            Produto p = new Produto(nome, preco);
 
             Console.WriteLine($"Dados do produto: {p}");
             Console.WriteLine();
